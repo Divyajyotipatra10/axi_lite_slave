@@ -187,3 +187,58 @@ Verifies slave stalls read channel when RREADY is low.
 TCL script output from ModelSim simulation showing successful execution.
 
 ![TCL Output](https://github.com/user-attachments/assets/8c606f42-c659-41e8-9afa-9677288745c9)
+
+## Getting Started
+
+### 📁 Directory Structure
+
+axi-lite-slave/
+├── .rtl/
+│ └── s_axi_lite.v # AXI Lite Slave RTL
+├── .tb/
+│ └── s_axi_tb.sv # SystemVerilog testbench
+├── .run/
+│ └── do_axi_lite.tcl # ModelSim TCL script
+└── README.md
+
+---
+
+### ▶️ Running Simulation
+
+#### Prerequisites
+
+- [ModelSim / QuestaSim](https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/model-sim.html)
+
+#### Run with TCL
+
+```bash
+vsim -do .run/do_axi_lite.tcl
+```
+---
+## Further Usage
+This AXI Lite slave interface can be directly used for:
+1. IP creation and register mapping in Vivado / Quartus
+2. Bridging to UART, SPI, I2C controllers
+3. Peripheral register control in Zynq, MicroBlaze, or soft cores
+4. AXI-based memory-mapped designs or testing
+
+---
+
+## License
+This project is licensed under the MIT License.
+
+---
+
+## Acknowledgements
+Thanks to the open-source FPGA and AXI communities for inspiration and technical resources.
+- [AMD Xilinx AXI4-Lite Interface Documentation](https://docs.amd.com/r/en-US/pg202-mipi-dphy/AXI4-Lite-Interface) — for detailed specification and signal descriptions.
+
+---
+
+## Contact
+
+For questions or feedback, please contact:  
+**Divyajyoti Patra**  
+Email: djpatra07@gmail.com  
+LinkedIn: https://www.linkedin.com/in/divyajyoti-patra-185a13225/
+
