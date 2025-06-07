@@ -1,8 +1,9 @@
 # AXI Lite Slave Interface
 
 <!-- Banner Image -->
-![Banner Image](![image](https://github.com/user-attachments/assets/ce292a21-9c43-42d7-a335-7a21de49c39f)
-)
+
+![Banner Image](https://github.com/user-attachments/assets/ce292a21-9c43-42d7-a335-7a21de49c39f)
+
 
 ---
 
