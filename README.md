@@ -2,7 +2,7 @@
 
 <!-- Banner Image -->
 
-![Banner Image](https://github.com/user-attachments/assets/ce292a21-9c43-42d7-a335-7a21de49c39f)
+![Banner Image](elaborated_design/Banner_Image.png)
 
 
 ---
@@ -52,7 +52,7 @@ This project implements a fully protocol-compliant AXI Lite Slave Interface in V
 - TOP MODULE
 ![RTL_Design](elaborated_design/RTL_view.png)
 - Internal View
-![Internal View](https://github.com/user-attachments/assets/a43f0d1f-0f2c-47cf-9ddd-6bb73fede110)
+![Internal View](elaborated_design/Internal_View.png)
 
 
 The design is minimal in logic and resource usage, making it highly reusable and adaptable for various IP blocks.
@@ -64,7 +64,7 @@ The design is minimal in logic and resource usage, making it highly reusable and
 The module uses minimal FPGA resources and is optimized for efficient implementation.
 
 <!-- Insert resource utilization image below -->
-![Resource Utilization](https://github.com/user-attachments/assets/8a8882a3-c54f-46ed-8623-5750526e4407)
+![Resource Utilization](elaborated_design/Resource_Util.png)
 
 
 ---
@@ -94,7 +94,7 @@ All AXI Lite behaviors were tested with edge cases and stress conditions. Testbe
 
 Verifies slave resets all internal state correctly on `s_axi_resetn` assertion.
 
-![Reset Verification](https://github.com/user-attachments/assets/af3e5939-cb9b-42ba-b700-be8e76692ba9)
+![Reset Verification](simulated_waveform/Reset_.png)
 
 ---
 
@@ -102,7 +102,7 @@ Verifies slave resets all internal state correctly on `s_axi_resetn` assertion.
 
 Validates a proper AW-W-B write flow with correct acknowledgment and memory update.
 
-![Single Write](https://github.com/user-attachments/assets/1ddb19cb-e287-4d53-a21c-5799f052454a)
+![Single Write](simulated_waveform/s_write.png)
 
 ---
 
@@ -110,7 +110,7 @@ Validates a proper AW-W-B write flow with correct acknowledgment and memory upda
 
 Confirms proper AR-R response and data retrieval from slave memory.
 
-![Single Read](https://github.com/user-attachments/assets/b5e581a5-180f-4d40-ae3f-cd892b628006)
+![Single Read](simulated_waveform/s_read.png)
 
 ---
 
@@ -118,7 +118,7 @@ Confirms proper AR-R response and data retrieval from slave memory.
 
 Tests parallel handling of read and write channels independently.
 
-![Simultaneous RW](https://github.com/user-attachments/assets/cd2cee58-4923-465d-8987-725add6c5ec0)
+![Simultaneous RW](simulated_waveform/sim_rd_wr.png)
 
 ---
 
@@ -126,7 +126,7 @@ Tests parallel handling of read and write channels independently.
 
 Checks response for a write to an unmapped/invalid address.
 
-![Invalid Write](https://github.com/user-attachments/assets/d98f6817-1691-46e1-a28e-f3eb7f2305a7)
+![Invalid Write](simulated_waveform/wr_err.png)
 
 ---
 
@@ -134,7 +134,7 @@ Checks response for a write to an unmapped/invalid address.
 
 Checks response for a read from an unmapped/invalid address.
 
-![Invalid Read](https://github.com/user-attachments/assets/53438d2b-076c-4047-aa05-3f8500ae9a36)
+![Invalid Read](simulated_waveform/rd_err.png)
 
 ---
 
@@ -142,7 +142,7 @@ Checks response for a read from an unmapped/invalid address.
 
 Tests pipelined write bursts with consecutive AW-W handshakes.
 
-![B2B Write](https://github.com/user-attachments/assets/be16e783-e328-4760-832d-8a26a26c1bef)
+![B2B Write](simulated_waveform/b2b_wr.png)
 
 ---
 
@@ -150,7 +150,7 @@ Tests pipelined write bursts with consecutive AW-W handshakes.
 
 Tests pipelined reads with back-to-back AR handshakes.
 
-![B2B Read](https://github.com/user-attachments/assets/e4ceafd2-0bae-4f0a-acf2-3e462f5784cc)
+![B2B Read](simulated_waveform/b2b_rd.png)
 
 ---
 
@@ -158,7 +158,7 @@ Tests pipelined reads with back-to-back AR handshakes.
 
 Tests interleaved pipelined writes and reads.
 
-![B2B RW](https://github.com/user-attachments/assets/10138772-5eae-4b6d-b417-629556ad3bde)
+![B2B RW](simulated_waveform/b2b_wr_rd.png)
 
 ---
 
@@ -166,7 +166,7 @@ Tests interleaved pipelined writes and reads.
 
 Verifies proper slave stalling when WVALID asserted without WREADY available.
 
-![WVALID BP](https://github.com/user-attachments/assets/e3d72289-b305-4116-b5a7-61fcf174d70e)
+![WVALID BP](simulated_waveform/wvalid_bp.png)
 
 ---
 
@@ -174,7 +174,7 @@ Verifies proper slave stalling when WVALID asserted without WREADY available.
 
 Checks slave behavior when master delays readout of write response.
 
-![BREADY BP](https://github.com/user-attachments/assets/7a3f9fca-389c-4ace-847e-f99c30b2af6c)
+![BREADY BP](simulated_waveform/bready_bp.png)
 
 ---
 
@@ -182,34 +182,18 @@ Checks slave behavior when master delays readout of write response.
 
 Verifies slave stalls read channel when RREADY is low.
 
-![RREADY BP](https://github.com/user-attachments/assets/c473fd7c-340b-4202-8bee-a4eaed6f08b0)
+![RREADY BP](simulated_waveform/rready_bp.png)
 
 ---
 
 ## Complete Waveform
-![OUTPUT WAVE](https://github.com/user-attachments/assets/ba5192bf-fdf8-4b26-9529-d4fbe51d3554)
+![OUTPUT WAVE](simulated_waveform/complete_sim_wave.png)
 
 ## TCL Simulation Output
 
 TCL script output from ModelSim simulation showing successful execution.
 
-![TCL Output](https://github.com/user-attachments/assets/8c606f42-c659-41e8-9afa-9677288745c9)
-
-## Getting Started
-
-### 📁 Directory Structure
-
-<pre> <code> axi-lite-slave/ 
-  ├── .rtl/ │ 
-    └── top_module.v # Slave Instance
-      └── s_axi_lite.v # AXI Lite Slave RTL module 
-  ├── .tb/ │ 
-    └── s_axi_tb.sv # SystemVerilog testbench 
-  ├── .run/ │ 
-    └── do_axi_lite.tcl # ModelSim TCL script 
-  └── README.md # Project documentation 
-</code> </pre>
----
+![TCL Output](simulated_waveform/tcl_console.png)
 
 ### ▶️ Running Simulation
 
