@@ -195,6 +195,22 @@ TCL script output from ModelSim simulation showing successful execution.
 
 ![TCL Output](simulated_waveform/tcl_console.png)
 
+
+### Repository Structure
+<pre><code>
+  axi_lite_slave/
+  ├── elaborated_design/         # RTL elaboration images
+  ├── rtl/                       # RTL design files
+  │   └── top_module.v           # s_axi_lite instantiated 
+  |     └── s_axi_lite.v         # AXI Lite Slave RTL module
+  ├── run/                       # Simulation scripts
+  │   └── do_axi_lite.tcl        # ModelSim TCL script
+  ├── simulated_waveform/        # Simulation waveform images
+  ├── tb/                        # Testbench files
+  │   └── s_axi_tb.sv            # SystemVerilog testbench
+  ├── LICENSE                    # Project license (MIT)
+  └── README.md                  # Project documentation
+</code></pre>
 ### ▶️ Running Simulation
 
 #### Prerequisites
@@ -202,6 +218,9 @@ TCL script output from ModelSim simulation showing successful execution.
 - [ModelSim / QuestaSim](https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/model-sim.html)
 
 #### Run with TCL
+
+Ensure ModelSim is installed and accessible from your command line.
+Navigate to the repository root and execute:
 
 ```bash
 vsim -do .run/do_axi_lite.tcl
