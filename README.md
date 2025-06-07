@@ -193,14 +193,13 @@ TCL script output from ModelSim simulation showing successful execution.
 ### 📁 Directory Structure
 
 axi-lite-slave/
-├── .rtl/
-│ └── s_axi_lite.v # AXI Lite Slave RTL
-├── .tb/
-│ └── s_axi_tb.sv # SystemVerilog testbench
-├── .run/
-│ └── do_axi_lite.tcl # ModelSim TCL script
-└── README.md
-
+├── .rtl/ # RTL design files
+│ └── s_axi_lite.v # AXI Lite Slave RTL module
+├── .tb/ # Testbench files
+│ └── s_axi_tb.sv # SystemVerilog testbench for AXI Lite Slave
+├── .run/ # Simulation scripts
+│ └── do_axi_lite.tcl # ModelSim TCL script for simulation
+└── README.md # Project documentation
 ---
 
 ### ▶️ Running Simulation
