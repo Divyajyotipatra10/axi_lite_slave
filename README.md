@@ -201,7 +201,8 @@ TCL script output from ModelSim simulation showing successful execution.
 
 <pre> <code> axi-lite-slave/ 
   ├── .rtl/ │ 
-    └── s_axi_lite.v # AXI Lite Slave RTL module 
+    └── top_module.v # Slave Instance
+      └── s_axi_lite.v # AXI Lite Slave RTL module 
   ├── .tb/ │ 
     └── s_axi_tb.sv # SystemVerilog testbench 
   ├── .run/ │ 
