@@ -48,6 +48,13 @@ This project implements a fully protocol-compliant AXI Lite Slave Interface in V
 - Address decode for multiple slave registers
 - Response generation for invalid transactions
 
+## RTL elaborated image
+- TOP MODULE
+![RTL_Design](https://github.com/user-attachments/assets/0acc1023-d2b2-4141-8267-636ced2e58f5)
+- Internal View
+![Internal View](https://github.com/user-attachments/assets/a43f0d1f-0f2c-47cf-9ddd-6bb73fede110)
+
+
 The design is minimal in logic and resource usage, making it highly reusable and adaptable for various IP blocks.
 
 ---
