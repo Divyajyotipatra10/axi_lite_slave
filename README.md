@@ -50,7 +50,7 @@ This project implements a fully protocol-compliant AXI Lite Slave Interface in V
 
 ## RTL elaborated image
 - TOP MODULE
-![RTL_Design](https://github.com/user-attachments/assets/0acc1023-d2b2-4141-8267-636ced2e58f5)
+![RTL_Design](elaborated_design/RTL_view.png)
 - Internal View
 ![Internal View](https://github.com/user-attachments/assets/a43f0d1f-0f2c-47cf-9ddd-6bb73fede110)
 
