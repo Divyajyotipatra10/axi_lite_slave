@@ -3,7 +3,7 @@
 module s_axi_lite #(
     parameter S_AXI_DATA_WIDTH  = 32,
     parameter S_AXI_ADDR_WIDTH  = 32,
-    parameter S_AXI_MEM_DEPTH   = 8 //changes based on number of GPIO selected
+    parameter S_AXI_MEM_DEPTH   = 8 
 )
 (
     //GLOBAL Signals
